@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "llama-jax"
+version = "0.1.0"
+description = ""
+authors = ["xjdr <xjdr-github@gmail.com>"]
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = "^3.10,<3.12"
+jax = "^0.4.23"
+jaxlib = "^0.4.23"
+sentencepiece = "^0.1.99"
+tyro = "^0.6.0"
+accelerate = "^0.26.1"
+safetensors = "^0.4.1"
+protobuf = "3.20.3"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.12.0"
+torch = "^2.1.2"
+transformers = "^4.36.2"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
